@@ -1,0 +1,16 @@
+1- Definição dos wareframes (base das páginas) (dia 14/06/2025)
+⚙️|Ferramenta utilizada: https://app.banani.co/flow
+
+2- Escolha da tabela de cores (dia 14/06/2025)
+| Elemento                         | Cor aproximada (Hex)             | Descrição                                  |
+| -------------------------------- | -------------------------------- | ------------------------------------------ |
+| **Fundo da página**              | `#E3D6FF`                        | Roxo claro lavanda, muito suave            |
+| **Texto principal**              | `#1A1A1A` ou `#000000`           | Preto ou cinza escuro                      |
+| **Texto secundário**             | `#555`                           | Cinza médio para informações menores       |
+| **Botões / ícones ativos**       | `#5B2EFF` ou `#4A00E0`           | Roxo/azul elétrico (para ações e destaque) |
+| **Background do layout externo** | `#1A1A1A` ou `#111111`           | Quase preto (modo escuro ao redor)         |
+| **Contornos / cards**            | `#D0BFFF` ou translúcido do roxo | Leve contraste no mesmo tom                |
+
+3- Realização do HTML (dia 17/06/2025 - )
+
+4- Realização do CSS (dia 17/06/2025 - )

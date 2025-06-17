@@ -1,0 +1,55 @@
+main {
+    display: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+}
+
+.intro_image img {
+    border-radius: 10px;
+    width: 700px;
+    height: auto;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Botões */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5B2EFF; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.action-buttons button:nth-child(2) {
+    background-color: #5B2EFF; 
+    color: #555;
+}
+
+.action-buttons button:nth-child(3) {
+    background-color: #5B2EFF; 
+    color: #555;
+}
+
+.action-buttons button:hover {
+    opacity: 0.8;
+}
