@@ -6,9 +6,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #E3D6FF;
+    background-color: #d5ceff;
     color: #1A1A1A;
     display: center;
     justify-content: center;
-    padding: 50px;
+    padding: 20px;
+    margin: 10px;
 }
