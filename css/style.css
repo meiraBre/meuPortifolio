@@ -1,55 +1,55 @@
 main {
-    display: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 50px;
-    max-width: 1200px;
+    min-height: 100vh;
+    padding: 40px;
 }
-
-.intro_image img {
-    border-radius: 10px;
-    width: 700px;
-    height: auto;
-    object-fit: cover;
+.element_one {
+    display: flex;
+    flex-direction: row; /* Título à direita da imagem */
+    align-items: flex-start; /* Alinha o topo dos itens */
+    margin: 20px;
 }
-
-h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-main > div:last-child {
+.intro_image {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: flex-start;
 }
-
-/* Botões */
+img {
+    width: 625px;
+    border-radius: 5px;
+}
+.title h1 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-left: 20px;
+}
+.title p {
+    font-size: 1.0rem;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 400px;
+}
+/* Botões embaixo da imagem */
 .action-buttons {
+    margin: 20px;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
-
 .action-buttons button {
     padding: 8px 14px;
     border: none;
     border-radius: 8px;
-    background-color: #5B2EFF; 
-    color: white;
+    background-color: #d4dbff; 
+    color: #284cff;
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
 }
-
-.action-buttons button:nth-child(2) {
-    background-color: #5B2EFF; 
-    color: #555;
-}
-
-.action-buttons button:nth-child(3) {
-    background-color: #5B2EFF; 
-    color: #555;
-}
-
 .action-buttons button:hover {
     opacity: 0.8;
+    color: white;
+    background-color: #284cff;
 }
