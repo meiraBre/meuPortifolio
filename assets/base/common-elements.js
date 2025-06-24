@@ -16,5 +16,5 @@ function loadHTML(containerId, url) {
 }
 
 // Carregando o header e o footer
-loadHTML('header-placeholder', 'header.html');
-loadHTML('footer-placeholder', 'footer.html');
+loadHTML('header-placeholder', '../assets/base/header.html');
+loadHTML('footer-placeholder', '../assets/base/footer.html');
