@@ -7,35 +7,37 @@ main {
 }
 .element_one {
     display: flex;
-    flex-direction: row-reverse; 
+    flex-direction: row; /* Título à direita da imagem */
+    align-items: flex-start; /* Alinha o topo dos itens */
+    margin: 20px;
 }
-
-/* Bloco com imagem e botões */
 .intro_image {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
-
-.intro_image img {
-    width: 650px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+img {
+    width: 625px;
+    border-radius: 5px;
 }
-
-/* Título */
 .title h1 {
     font-size: 1.8rem;
-    margin: 0;
+    margin-top: 0;
+    margin-left: 20px;
 }
-
+.title p {
+    font-size: 1.0rem;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 400px;
+}
 /* Botões embaixo da imagem */
 .action-buttons {
+    margin: 20px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
-
 .action-buttons button {
     padding: 8px 14px;
     border: none;
