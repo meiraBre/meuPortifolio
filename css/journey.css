@@ -1,0 +1,66 @@
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px;
+}
+.conteudo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 10px;
+}
+.cursos {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start; 
+    margin: 20px;
+}
+img {
+    margin-right: 5px;
+}
+h3 {
+    margin: 5px;
+}
+.tecnologias {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color:  #1A1A1A ;
+}
+.tecnologias h1 {
+  margin-bottom: 15px;
+  margin-left: 150px;
+}
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 150px;
+}
+.tech-container p {
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+.tech-container p:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+button {
+    background: rgba(255, 255, 255, 0.3); 
+    color: #1A1A1A;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);  
+}
