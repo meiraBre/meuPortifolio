@@ -66,3 +66,52 @@ footer {
 .footer-links a:hover {
     color: #7a7aff;
 }
+
+/*Estilização do botão flutuante de forms*/
+#floating-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+#open-contact {
+    background-color: #d4dbff;      
+    color: #007bff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+#contact-form-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: #d5ceff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    width: 300px;
+}
+#contact-form-container.hidden {
+    display: none;
+}
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#contact-form button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    background-color: #1e1e2f; 
+    color: white; 
+    transition: background-color 0.3s ease, color 0.3s ease;             
+}
+#contact-form button:hover {
+  background-color: #0056b3; 
+}

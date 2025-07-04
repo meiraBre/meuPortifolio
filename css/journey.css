@@ -53,14 +53,14 @@ h3 {
   background: rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
 }
-button {
+.botao-download {
     background: rgba(255, 255, 255, 0.3); 
     color: #1A1A1A;
     border-radius: 5px;
     padding: 10px;
     margin: 20px;
 }
-button:hover {
+.botao-download:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: scale(1.05);  
 }
