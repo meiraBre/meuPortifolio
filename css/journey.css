@@ -7,8 +7,9 @@ main {
 }
 .conteudo {
     display: flex;
+    justify-content: flex-start;
     flex-direction: column; 
-    align-items: center; 
+    align-items: flex-start;
     margin: 10px;
 }
 .cursos {
@@ -16,7 +17,11 @@ main {
     flex-direction: column; 
     justify-content: flex-start;
     align-items: flex-start; 
-    margin: 20px;
+    margin: 30px;
+}
+.cursos h1 {
+  margin: 15px;
+  margin-left: 10px;
 }
 img {
     margin-right: 5px;
@@ -30,14 +35,13 @@ h3 {
   color:  #1A1A1A ;
 }
 .tecnologias h1 {
-  margin-bottom: 15px;
-  margin-left: 150px;
+  margin-left: 18px;
 }
 .tech-container {
   display: flex;
+  margin: 20px;
   flex-wrap: wrap;
   gap: 10px;
-  margin-left: 150px;
 }
 .tech-container p {
   padding: 10px 15px;
@@ -63,4 +67,14 @@ h3 {
 .botao-download:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: scale(1.05);  
+}
+.curriculo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.curriculo a {
+  background-color: #1A1A1A;
+  color: white;
+  text-decoration: none;
 }
