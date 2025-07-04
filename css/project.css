@@ -1,0 +1,42 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+.titulo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;  
+}
+.projects {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; 
+    align-items: flex-start;
+    margin: 20px; 
+}
+.projects p {
+    color: black;
+    margin: 20px;
+    font-size: 20px;
+}
+.projects a {
+    color: #1A1A1A;           
+    text-decoration: none;
+    font-weight: bold; 
+    margin: 10px; 
+    font-size: 20px;
+}
+.projects a:hover {
+  color: #284cff;         
+  text-decoration: underline;
+}
+.projects .img-projeto-01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
