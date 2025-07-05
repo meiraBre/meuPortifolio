@@ -14,3 +14,5 @@
 3- Realização do HTML (dia 17/06/2025 - )
 
 4- Realização do CSS (dia 17/06/2025 - )
+
+5- Reaproveitamento de código e organização de arquivos base para as páginas (dia 23/06/2025)

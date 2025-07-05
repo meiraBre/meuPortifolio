@@ -1,0 +1,160 @@
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px;
+}
+.conteudo {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; 
+    align-items: flex-start;
+    margin: 10px;
+}
+.cursos {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start; 
+    margin: 30px;
+}
+.cursos h1 {
+  margin: 15px;
+  margin-left: 10px;
+}
+img {
+    margin-right: 5px;
+}
+h3 {
+    margin: 5px;
+}
+.tecnologias {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color:  #1A1A1A ;
+}
+.tecnologias h1 {
+  margin-left: 18px;
+}
+.tech-container {
+  display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tech-container p {
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+.tech-container p:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+.botao-download {
+    background: rgba(255, 255, 255, 0.3); 
+    color: #1A1A1A;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+.botao-download:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);  
+}
+.curriculo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.curriculo a {
+  background-color: #1A1A1A;
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsividade para telas até 768px (tablets e celulares) */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column; /* empilha o conteúdo verticalmente */
+    padding: 1.5rem; /* padding mais suave */
+    align-items: center; /* centraliza o conteúdo */
+  }
+
+  .conteudo {
+    margin: 1rem 0;
+    width: 90%;
+  }
+
+  .cursos {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .cursos h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  img {
+    margin-right: 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .tecnologias {
+    padding: 1rem;
+  }
+
+  .tecnologias h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .tech-container {
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  .tech-container p {
+    white-space: normal; /* permite quebra de linha */
+    width: auto;
+    min-width: 120px;
+  }
+
+  .botao-download {
+    margin: 1rem auto;
+    padding: 0.75rem 1rem;
+    display: block;
+    width: fit-content;
+    transition: transform 0.3s ease;
+  }
+
+  .curriculo {
+    justify-content: center;
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .curriculo a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}

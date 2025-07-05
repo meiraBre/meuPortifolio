@@ -3,13 +3,14 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 40px;
+    padding: 2.5rem; /* 40px -> rem */
 }
 .element_one {
     display: flex;
     flex-direction: row; /* Título à direita da imagem */
     align-items: flex-start; /* Alinha o topo dos itens */
-    margin: 20px;
+    margin: 1.25rem; /* 20px */
+    max-width: 100%;
 }
 .intro_image {
     display: flex;
@@ -17,31 +18,31 @@ main {
     align-items: flex-start;
 }
 img {
-    width: 625px;
-    border-radius: 5px;
+    max-width: 39rem; /* 625px -> 39 x 16px */
+    border-radius: 0.313rem; /* 5px */
 }
 .title h1 {
     font-size: 1.8rem;
     margin-top: 0;
-    margin-left: 20px;
+    margin-left: 1.25rem; /* 20px */
 }
 .title p {
     font-size: 1.0rem;
     margin-top: 10px;
     margin-left: 20px;
-    width: 400px;
+    max-width: 90vw; /* em vez de largura fixa */
 }
 /* Botões embaixo da imagem */
 .action-buttons {
-    margin: 20px;
+    margin: 1.25rem;
     display: flex;
-    gap: 10px;
+    gap: 0.625rem; /* 10px */
     flex-wrap: wrap;
 }
 .action-buttons button {
-    padding: 8px 14px;
+    padding: 0.5rem 0.875rem; /* 8px 14px */
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background-color: #d4dbff; 
     color: #284cff;
     font-weight: bold;
@@ -52,4 +53,43 @@ img {
     opacity: 0.8;
     color: white;
     background-color: #284cff;
+}
+
+/* Responsividade para telas com largura até 768px (tablets e celulares) */
+@media (max-width: 768px) {
+  /* Altera o layout horizontal para vertical */
+  .element_one {
+    flex-direction: column; /* empilha os itens */
+    align-items: center; /* centraliza na vertical */
+    text-align: center; /* centraliza o texto */
+  }
+
+  /* Imagem se ajusta à largura da tela */
+  .intro_image img {
+    width: 100%; /* ocupa toda a largura disponível */
+    max-width: 100%; /* garante que não ultrapasse */
+    height: auto; /* mantém proporção */
+  }
+
+  /* Remove margem lateral do texto para centralizar */
+  .title h1,
+  .title p {
+    margin-left: 0;
+  }
+
+  /* Ajusta largura do parágrafo para não ultrapassar a tela */
+  .title p {
+    max-width: 95%;
+  }
+
+  /* Centraliza os botões abaixo do texto */
+  .action-buttons {
+    justify-content: center;
+  }
+
+  /* Garante que os botões fiquem com largura confortável */
+  .action-buttons button {
+    width: 100%;
+    max-width: 250px;
+  }
 }
