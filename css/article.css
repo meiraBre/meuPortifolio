@@ -1,0 +1,125 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1002; /* maior que a sidebar */
+}
+/* MAIN */
+main {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 220px;
+    scroll-behavior: smooth;
+    padding-top: 100px;
+}
+/* SIDEBAR (desktop e mobile base) */
+.sidebar {
+    width: 220px;
+    background-color: #1e1e2f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    top: 80px; 
+    height: calc(100vh - 80px); /* ajusta altura para não ultrapassar a tela */
+    padding: 1rem 0;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    transform: translateX(0); /* visível por padrão no desktop */
+}
+.sidebar ul {
+    list-style: none;
+    padding: 2rem 1rem;
+    margin: 0;
+}
+.sidebar li {
+    margin: 0.8rem 0;
+    text-align: center;
+}
+.sidebar a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #eee;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #284cff;
+    color: #fff;
+    border-left: 4px solid white;
+}
+.sidebar img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+/* ARTIGOS */
+.artigo {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+.artigo h2 {
+    font-size: 2rem;
+    color: #1e1e2f;
+    margin-bottom: 1rem;
+}
+.artigo h3 {
+    color: #1e1e1e;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.artigo ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.artigo li {
+    margin-bottom: 0.5rem;
+}
+/* BOTÃO DO MENU MOBILE */
+#menu-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 2001;
+    display: none;
+    cursor: pointer;
+}
+
+/* RESPONSIVO PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    }
+    @media (max-width: 768px) {
+    main {
+    margin-top: 80px;
+    }
+  /* Esconde sidebar por padrão */
+  .sidebar {
+    transform: translateX(-100%);
+    width: 100%;
+  }
+  main {
+    margin-left: 0;
+    padding: 1rem;
+  }
+  .sidebar a {
+    font-size: 1.2rem;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .sidebar img {
+    display: none;
+  }
+}
+

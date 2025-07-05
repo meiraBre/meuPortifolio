@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos</title>
+    <script src="../assets/base/common-elements.js" defer></script>
+    <script src="../assets/base/contact-widget.js" defer></script>
+    <link rel="stylesheet" href="../assets/base/base.css">
+    <link rel="stylesheet" href="../css/article.css">
+</head>
+<body>
+    <header>
+        <div id="header-placeholder"></div>
+    </header>
+    <nav class="sidebar">
+        <ul>
+        <li><a href="#atlassian"><img src="../assets/img/tool (1).png" alt="Jira/Confluence"> Atlassian Tools</a></li>
+        <li><a href="#postman"><img src="../assets/img/tool (1).png" alt="Postman"> Testes com Postman</a></li>
+        <li><a href="#scrum"><img src="../assets/img/tool (1).png" alt="Scrum"> Produtividade Ágil</a></li>
+        <li><a href="#robot"><img src="../assets/img/tool (1).png" alt="Robot Framework"> Testes Automatizados</a></li>
+        <li><a href="#mongodb"><img src="../assets/img/tool (1).png" alt="MongoDB"> MongoDB</a></li>
+        <li><a href="#ia"><img src="../assets/img/tool (1).png" alt="Inteligência Artificial"> Inteligência Artificial</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="atlassian" class="artigo">
+        <h2>Ferramentas Atlassian: Jira e Confluence</h2>
+        <p>Jira e Confluence são duas ferramentas amplamente utilizadas por equipes ágeis para gestão de projetos e documentação colaborativa.</p>
+        
+        <h3> Jira: Gestão Ágil de Tarefas</h3>
+        <p>O Jira é uma plataforma poderosa para gerenciamento de tarefas, criação de sprints, definição de epics e acompanhamento de progresso. Ele permite configurar quadros Kanban ou Scrum, facilitando a organização do fluxo de trabalho.</p>
+        
+        <h3> Confluence: Documentação Viva</h3>
+        <p>O Confluence complementa o Jira oferecendo um espaço colaborativo para documentar requisitos, criar manuais, fazer anotações de reuniões e centralizar conhecimento da equipe.</p>
+        
+        <h3> Benefícios Integrados</h3>
+        <ul>
+            <li>Integração nativa entre Jira e Confluence.</li>
+            <li>Colaboração em tempo real.</li>
+            <li>Automação de fluxos com regras e notificações.</li>
+            <li>Histórico de mudanças e rastreabilidade.</li>
+        </ul>
+        
+        <p>Essas ferramentas juntas potencializam a transparência, comunicação e produtividade dos times ágeis.</p>
+        </section>
+
+
+        <section id="postman" class="artigo">
+        <h2>Postman para Testes de API</h2>
+        <p>O Postman é uma das ferramentas mais populares para testar APIs REST. Ele permite fazer requisições HTTP, validar respostas e criar testes automatizados.</p>
+
+        <h3> Principais Funcionalidades</h3>
+        <ul>
+            <li>Envio de requisições GET, POST, PUT, DELETE etc.</li>
+            <li>Criação de coleções com múltiplos endpoints.</li>
+            <li>Execução de testes automatizados com scripts em JavaScript.</li>
+            <li>Importação de Swagger/OpenAPI para facilitar o uso.</li>
+        </ul>
+
+        <h3> Automatização com Newman</h3>
+        <p>O Postman pode ser integrado a pipelines de CI/CD com o uso do Newman (executável via terminal), permitindo rodar coleções de testes automaticamente.</p>
+
+        <h3> Testes e Validações</h3>
+        <p>Com o Postman, é possível validar código de status, tempo de resposta, conteúdo do corpo da resposta e autenticação com tokens JWT, OAuth e API keys.</p>
+
+        <p>É uma ferramenta indispensável para qualquer QA ou desenvolvedor que trabalhe com APIs.</p>
+        </section>
+
+        <section id="scrum" class="artigo">
+        <h2>Produtividade com Scrum e Métodos Ágeis</h2>
+        <p>Scrum é uma metodologia ágil focada em entregar valor ao cliente de forma incremental, com ciclos curtos de trabalho chamados sprints.</p>
+
+        <h3> Papéis no Scrum</h3>
+        <ul>
+            <li><strong>Product Owner:</strong> responsável por priorizar e definir o que será entregue.</li>
+            <li><strong>Scrum Master:</strong> atua como facilitador e ajuda a remover impedimentos.</li>
+            <li><strong>Time de Desenvolvimento:</strong> realiza as entregas planejadas.</li>
+        </ul>
+
+        <h3> Cerimônias Principais</h3>
+        <ul>
+            <li><strong>Planning:</strong> define o que será feito na sprint.</li>
+            <li><strong>Daily:</strong> alinhamento diário do time.</li>
+            <li><strong>Review:</strong> apresentação das entregas ao final da sprint.</li>
+            <li><strong>Retrospective:</strong> análise e melhoria contínua do processo.</li>
+        </ul>
+
+        <h3> Vantagens do Scrum</h3>
+        <ul>
+            <li>Maior adaptabilidade às mudanças.</li>
+            <li>Entregas contínuas de valor.</li>
+            <li>Feedback constante.</li>
+            <li>Foco na colaboração e transparência.</li>
+        </ul>
+
+        <p>Quando aplicado corretamente, o Scrum contribui para um ambiente mais produtivo, motivado e centrado no cliente.</p>
+        </section>
+
+        <section id="robot" class="artigo">
+        <h2>Automatização de Testes com Robot Framework</h2>
+        <p>Robot Framework é uma ferramenta open source para automação de testes baseada em palavras-chave, muito utilizada para testes de APIs, front-end e processos robóticos (RPA).</p>
+
+        <h3> Estrutura de Testes Simples</h3>
+        <p>O grande diferencial do Robot é sua sintaxe simples, baseada em tabelas. Os testes são legíveis mesmo por pessoas não técnicas, o que favorece a colaboração entre QA, PO e devs.</p>
+
+        <h3> Integração com Bibliotecas</h3>
+        <ul>
+        <li><strong>SeleniumLibrary:</strong> para testes de interface web.</li>
+        <li><strong>RequestsLibrary:</strong> para testes de APIs REST.</li>
+        <li><strong>DatabaseLibrary:</strong> para validação de dados.</li>
+        </ul>
+
+        <h3>Benefícios</h3>
+        <ul>
+        <li>Reutilização de palavras-chave (keywords).</li>
+        <li>Execução de testes em lote com tags e suites.</li>
+        <li>Geração automática de relatórios HTML detalhados.</li>
+        </ul>
+
+        <p>O Robot Framework é uma excelente escolha para QAs que desejam robustez e clareza em seus testes automatizados.</p>
+        </section>
+
+        <section id="mongodb" class="artigo">
+        <h2>MongoDB para Armazenar e Acessar Dados</h2>
+        <p>MongoDB é um banco de dados NoSQL orientado a documentos que armazena informações em formato JSON (ou BSON). Ideal para aplicações modernas e flexíveis, como APIs e microserviços.</p>
+
+        <h3>Principais Características</h3>
+        <ul>
+        <li>Armazenamento não relacional (sem tabelas fixas).</li>
+        <li>Alta performance em leitura e escrita.</li>
+        <li>Alta escalabilidade horizontal (cluster e sharding).</li>
+        <li>Suporte a queries dinâmicas e agregações.</li>
+        </ul>
+
+        <h3>Como Usar:</h3>
+        <ol>
+        <li>Crie uma conta no <strong>MongoDB Atlas</strong> para hospedar dados na nuvem.</li>
+        <li>Configure seu cluster e colete o URI de conexão.</li>
+        <li>Utilize bibliotecas como <code>mongoose</code> (Node.js) ou <code>pymongo</code> (Python) para conectar sua aplicação.</li>
+        </ol>
+
+        <p>O MongoDB é uma alternativa moderna e prática para quem busca desempenho e flexibilidade em aplicações reais.</p>
+        </section>
+
+        <section id="ia" class="artigo">
+        <h2>Inteligência Artificial para Aceleração de Processos</h2>
+        <p>A Inteligência Artificial (IA) está transformando a maneira como as empresas operam, permitindo a automação de tarefas, a análise preditiva e a tomada de decisões em tempo real.</p>
+
+        <h3> Exemplos de Aplicações</h3>
+        <ul>
+            <li><strong>Assistentes Virtuais:</strong> como o ChatGPT, otimizam o atendimento ao cliente.</li>
+            <li><strong>Detecção de Erros:</strong> sistemas de IA podem identificar padrões de falhas automaticamente.</li>
+            <li><strong>Recomendações Inteligentes:</strong> IA sugere ações com base em históricos e tendências.</li>
+        </ul>
+
+        <h3> Benefícios na Prática</h3>
+        <ul>
+            <li>Redução de retrabalho e erros manuais.</li>
+            <li>Mais tempo para tarefas estratégicas.</li>
+            <li>Eficiência em análises de grandes volumes de dados.</li>
+            <li>Integração com pipelines de testes, QA e DevOps.</li>
+        </ul>
+
+        <p>Investir em IA significa acelerar processos, prever cenários e alcançar maior competitividade com dados em tempo real.</p>
+        </section>
+
+    </main>
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+</body>
+</html>
