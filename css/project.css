@@ -44,3 +44,50 @@ main {
     align-items: center;
     margin: 15px;
 }
+
+/* Responsividade para telas com largura até 768px */
+@media (max-width: 768px) {
+  main {
+    padding: 1.5rem; /* padding mais leve para telas pequenas */
+    flex-direction: column;
+  }
+
+  .titulo-principal {
+    margin: 1.5rem;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .projects {
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .projects p {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .projects a {
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+  }
+
+  .projects .img-projeto-01 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .projects .img-projeto-01 img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;       /* mantém proporção da imagem */
+    border-radius: 0.5rem; /* opcional: bordas arredondadas */
+  }
+}

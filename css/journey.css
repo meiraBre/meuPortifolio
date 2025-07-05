@@ -78,3 +78,83 @@ h3 {
   color: white;
   text-decoration: none;
 }
+
+/* Responsividade para telas até 768px (tablets e celulares) */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column; /* empilha o conteúdo verticalmente */
+    padding: 1.5rem; /* padding mais suave */
+    align-items: center; /* centraliza o conteúdo */
+  }
+
+  .conteudo {
+    margin: 1rem 0;
+    width: 90%;
+  }
+
+  .cursos {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .cursos h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  img {
+    margin-right: 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .tecnologias {
+    padding: 1rem;
+  }
+
+  .tecnologias h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .tech-container {
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  .tech-container p {
+    white-space: normal; /* permite quebra de linha */
+    width: auto;
+    min-width: 120px;
+  }
+
+  .botao-download {
+    margin: 1rem auto;
+    padding: 0.75rem 1rem;
+    display: block;
+    width: fit-content;
+    transition: transform 0.3s ease;
+  }
+
+  .curriculo {
+    justify-content: center;
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .curriculo a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
